@@ -4,12 +4,13 @@
 @interface CSFocusActivityView : UIView
 
 @end
+// needed bc idk 
 
-%hook CSFocusActivityView
+%hook CSFocusActivityView // hooking it 
 
-- (void)didMoveToWindow {
-    %orig;
-    [self removeFromSuperview];
+- (void)didMoveToWindow {	//some stuff to hide 
+    %orig;	//some more stuff to hide it 
+    [self removeFromSuperview];	 //hiding it 
 }
 
-%end
+%end //self explanatory 
